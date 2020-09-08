@@ -1,0 +1,19 @@
+$primary-color:#000;
+$secondary-color:rgb(233, 218, 6);
+
+
+//  Background browser support
+//  .background{
+//     background-size: cover;
+//     background-repeat: no-repeat;
+
+
+//   Set text Color  Auto change
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+      @return #000;
+    } @else {
+      @return #fff;
+    }
+  }
+  
